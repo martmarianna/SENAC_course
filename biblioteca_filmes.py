@@ -12,7 +12,7 @@ while True:
             usuario = input ('Quem assistiu o filme? ').title()
             if usuario in usuarios_filmes:
                 filme = input('Qual filme você quer adicionar?').title()
-                usuarios_filmes[usuario] = usuarios_filmes.append(filme)
+                usuarios_filmes[usuario].append(filme)
                 print (f'Filme {filme} adicionado ao cadastro de {usuario} com sucesso!')
             else:
                 print ('O usuário não esta cadastrado!')
